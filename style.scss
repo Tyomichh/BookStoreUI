@@ -185,7 +185,7 @@ body {
     margin-bottom: 70px;
   }
   &-slider {
-    margin: 20px 16px 40px 16px;
+    margin: 20px 20px 40px;
     display: flex;
     justify-content: center;
   }
@@ -374,7 +374,8 @@ body {
     max-width: 272px;
     max-height: 377px;
     width: 100%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    box-shadow:
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
       rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
 
@@ -826,10 +827,24 @@ body {
   position: relative;
 }
 
+.payment {
+  &-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  &-disclaimer {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+}
+
 .expireCVV {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  grid-template-columns: 1fr;
 }
 
 .form-group {
@@ -956,7 +971,7 @@ body {
   }
 }
 
-/*Media Styles*/ 
+/*Media Styles*/
 @media screen and (max-width: 1430px) {
   .container {
     max-width: 990px;
@@ -1112,6 +1127,10 @@ body {
     &-general {
       margin-bottom: 70px;
     }
+
+    &-slider {
+      margin: 20px 26px 40px;
+    }
   }
 
   .btn {
@@ -1226,11 +1245,16 @@ body {
 
   .title {
     &-place {
-      width: 330px;
+      width: 320px;
       top: 30%;
       left: 45%;
       transform: translate(-55%, -70%);
     }
+  }
+
+  .expireCVV {
+    grid-template-columns: 0.7fr 1fr;
+    gap: 20px;
   }
 
   .product {
@@ -1305,6 +1329,8 @@ body {
 
   .slick {
     &-arrow {
+      width: 30px;
+
       &.slick-next {
         right: -10%;
       }
@@ -1318,7 +1344,7 @@ body {
 
 @media screen and (max-width: 540px) {
   .container {
-    max-width: 350px;
+    max-width: 300px;
 
     &-bigger {
       max-width: 340px;
@@ -1327,6 +1353,15 @@ body {
     &-slider {
       max-width: 200px;
     }
+  }
+
+  .nav {
+    justify-content: space-around;
+  }
+
+  .popup-container {
+    padding: 20px 20px 50px;
+    max-width: 305px;
   }
 
   .spasing {
@@ -1359,7 +1394,7 @@ body {
     }
 
     &-SemiBold_black_main_title {
-      font-size: 50px;
+      font-size: 46px;
     }
 
     &-SemiBold_green {
@@ -1398,7 +1433,7 @@ body {
   .paragraf {
     &-rotate2023 {
       top: 85%;
-      left: 3%;
+      left: -3%;
       transform: translate(-97%, -15%);
     }
 
@@ -1410,15 +1445,19 @@ body {
 
   .product {
     &-container {
-      max-width: 155px;
+      max-width: 145px;
       height: 251px;
-      padding: 28px;
+      padding: 22px;
+    }
+
+    &-columns {
+      gap: 8px;
     }
   }
 
   .menu {
     &-wrapper {
-      width: 376px;
+      width: 320px;
     }
 
     &-listst {
@@ -1430,7 +1469,7 @@ body {
 
   .shopping {
     &-list {
-      width: 415px;
+      width: 360px;
     }
   }
 

@@ -19,7 +19,7 @@ $(document).on('click', e => {
 
 
 
-/*Add to Cart functions */ 
+/*Add to Cart functions */
 const productContainers = Array.from(document.querySelectorAll('.productCART'));
 let products = [];
 let quantyty = document.querySelector('.shopping-quantyty');
@@ -162,7 +162,7 @@ $('.pay-button').on('click', function (event) {
 
   event.preventDefault()
 
-  if (cardNumberInput.val().length >= 19 && expiryDateInput.val().length >= 5 && cvvInput.val().length >= 4) {
+  if (cardNumberInput.val().length >= 19 && expiryDateInput.val().length >= 5 && cvvInput.val().length >= 3) {
     payButton.hide();
     payButton.after(spinnerLoader);
 
@@ -328,7 +328,7 @@ $(document).on('click', '.btn-show_less', function () {
 
 
 
-/*Slider*/ 
+/*Slider*/
 $('.block_slider').slick({
   slidesToShow: 3,
   speed: 500,

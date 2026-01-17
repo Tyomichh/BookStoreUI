@@ -134,7 +134,7 @@ body {
   margin-bottom: 70px;
 }
 .spasing-slider {
-  margin: 20px 16px 40px 16px;
+  margin: 20px 20px 40px;
   display: flex;
   justify-content: center;
 }
@@ -689,10 +689,21 @@ body {
   position: relative;
 }
 
+.payment-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.payment-disclaimer {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
 .expireCVV {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  grid-template-columns: 1fr;
 }
 
 .form-group {
@@ -921,6 +932,9 @@ body {
   .spasing-general {
     margin-bottom: 70px;
   }
+  .spasing-slider {
+    margin: 20px 26px 40px;
+  }
   .btn-add_to_cart {
     width: 26px;
     height: 26px;
@@ -998,10 +1012,14 @@ body {
     font-size: 20px;
   }
   .title-place {
-    width: 330px;
+    width: 320px;
     top: 30%;
     left: 45%;
     transform: translate(-55%, -70%);
+  }
+  .expireCVV {
+    grid-template-columns: 0.7fr 1fr;
+    gap: 20px;
   }
   .product-columns {
     grid-row-gap: 30px;
@@ -1058,6 +1076,9 @@ body {
     left: 53%;
     transform: translate(-47%, -50%);
   }
+  .slick-arrow {
+    width: 30px;
+  }
   .slick-arrow.slick-next {
     right: -10%;
   }
@@ -1067,13 +1088,20 @@ body {
 }
 @media screen and (max-width: 540px) {
   .container, .container-bigger, .container-first_section, .container-second_section, .container-slider {
-    max-width: 350px;
+    max-width: 300px;
   }
   .container-bigger {
     max-width: 340px;
   }
   .container-slider {
     max-width: 200px;
+  }
+  .nav {
+    justify-content: space-around;
+  }
+  .popup-container {
+    padding: 20px 20px 50px;
+    max-width: 305px;
   }
   .spasing-general {
     margin-bottom: 50px;
@@ -1097,7 +1125,7 @@ body {
     font-size: 18px;
   }
   .montserat-SemiBold_black_main_title {
-    font-size: 50px;
+    font-size: 46px;
   }
   .montserat-SemiBold_green {
     font-size: 14px;
@@ -1124,7 +1152,7 @@ body {
   }
   .paragraf-rotate2023 {
     top: 85%;
-    left: 3%;
+    left: -3%;
     transform: translate(-97%, -15%);
   }
   .paragraf-bottom_place {
@@ -1132,18 +1160,21 @@ body {
     right: 30px;
   }
   .product-container, .product-container-ctlg {
-    max-width: 155px;
+    max-width: 145px;
     height: 251px;
-    padding: 28px;
+    padding: 22px;
+  }
+  .product-columns {
+    gap: 8px;
   }
   .menu-wrapper {
-    width: 376px;
+    width: 320px;
   }
   .menu-listst:nth-child(1) {
     margin-top: 285px;
   }
   .shopping-list {
-    width: 415px;
+    width: 360px;
   }
   .img-sail_books {
     max-width: 99px;
