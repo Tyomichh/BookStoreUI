@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Variables */
 /* Reset Styles */
 * {
@@ -364,7 +363,7 @@ body {
   gap: 30px;
 }
 .product-container, .product-container-ctlg {
-  position: relative; /* Встановлюємо позицію relative для елемента */
+  position: relative;
   max-width: 390px;
   width: 100%;
   height: 675px;
@@ -658,11 +657,11 @@ body {
 }
 .slick-arrow.slick-prev {
   left: -5%;
-  background: url("../Images/SVG_Icons/Arrow_Slider_left.svg") 0 0/100% no-repeat;
+  background: url("../../public/assets/images/SVG_Icons/Arrow_Slider_left.svg") 0 0/100% no-repeat;
 }
 .slick-arrow.slick-next {
   right: -5%;
-  background: url("../Images/SVG_Icons/Arrow_Slider_right.svg") 0 0/100% no-repeat;
+  background: url("../../public/assets/images/SVG_Icons/Arrow_Slider_right.svg") 0 0/100% no-repeat;
 }
 
 /*Pop up Styles*/
@@ -1067,7 +1066,7 @@ body {
   }
   .advertising_block-column:nth-child(2) {
     height: 250px;
-    background: url(../Images/Store_images/JhonBook_Barnch.png);
+    background: url(../../public/assets/images/Store_images/JhonBook_Barnch.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -20px;

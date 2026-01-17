@@ -453,14 +453,13 @@ body {
   }
 
   &-container {
-    position: relative; /* Встановлюємо позицію relative для елемента */
+    position: relative;
     max-width: 390px;
     width: 100%;
     height: 675px;
     padding: 48px;
     background-color: $WhiteCol;
     transition: transform 0.2s linear;
-    // border: 1px solid $TransparentLightGrey;
     filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
 
     &:hover {
@@ -791,14 +790,14 @@ body {
 
     &.slick-prev {
       left: -5%;
-      background: url("../Images/SVG_Icons/Arrow_Slider_left.svg") 0 0 / 100%
-        no-repeat;
+      background: url("../../public/assets/images/SVG_Icons/Arrow_Slider_left.svg")
+        0 0 / 100% no-repeat;
     }
 
     &.slick-next {
       right: -5%;
-      background: url("../Images/SVG_Icons/Arrow_Slider_right.svg") 0 0 / 100%
-        no-repeat;
+      background: url("../../public/assets/images/SVG_Icons/Arrow_Slider_right.svg")
+        0 0 / 100% no-repeat;
     }
   }
 }
@@ -1314,7 +1313,7 @@ body {
 
       &:nth-child(2) {
         height: 250px;
-        background: url(../Images/Store_images/JhonBook_Barnch.png);
+        background: url(../../public/assets/images/Store_images/JhonBook_Barnch.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position-x: -20px;
